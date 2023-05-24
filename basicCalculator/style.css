@@ -1,0 +1,41 @@
+/* Adding a background image. So that the page looks more pretty  */
+body{
+    background-image: url('./Images/backgroundImage.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/* Styling the structure of entire calculator */
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    border: 2px solid rgb(10, 10, 10);
+    gap: 5px;
+    padding: 10px;
+    width: 40%;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+/* Styling the buttons  */
+.grid-container > button{
+    border: 3px solid black;
+    height: 40px;
+    font-size: larger;
+    font-weight:bolder
+}
+
+/* Styling the display box, So that it occupies the entire row */
+.item1{
+    height: 30px;
+    border: 5px solid;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    padding: 5px;
+}
+
+/* Styling the clear display button, So that it occupies the entire row */
+.item18{
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
